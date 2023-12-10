@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Schedule for Johan de Rijke - jwderijke - Fall Quarter, 2023
+        </title>
+        <link rel="stylesheet" href="css/styleLab2.css">
+    </head>
+    <body>
+        <h1>
+            Terms and Definitions of a Table
+        </h1>
+        <p>
+            <dl>
+                <dt>How to define a table?</dt>
+                <dd>A table is defined in html by using the opening tag &lt;table&gt; and the closing tag &lt;/table&gt;. This, along with other tags such as &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;, format your basic html paragraph writing into a table.</dd>
+                <dt>When to use &lt;tr&gt;?</dt>
+                <dd>&lt;tr&gt; is used when you want a new row in your table because this tag creates a new row in your table.</dd>
+                <dt>When to use &lt;th&gt;?</dt>
+                <dd>&lt;th&gt; is used in the first row of your table, bolding and slightly enlarging the first row of your table. This row in most tables is usually the row containing all of the labels for the table; therefore, having this tag often makes your table look far more appealing.</dd>
+                <dt>When to use &lt;td&gt;?</dt>
+                <dd>&lt;td&gt; is used in a table when you want a new cell within your row. Using both the &lt;tr&gt; and &lt;td&gt; tags will also create the amount of columns in your table because html recognizes rows rather than columns. Thus, the use of &lt;td&gt; and &lt;tr&gt; tags will indirectly create more or less columns in your table because html does not have a column tag.</dd>
+                <dt>When to use &lt;thead&gt;?</dt>
+                <dd>&lt;thead&gt; is used to separate the header portion from the rest of the table. This is used to better format your table. Moreover, this tag allows the browser to display the header row along the top of the webpage, and along with a footer tag, will allow for independent scrolling of the body portion of the table.</dd>
+                <dt>When to use &lt;tfoot&gt;?</dt>
+                <dd>&lt;tfoot&gt; is used to separate the footer portion from the rest of the table, effectively making your table more appealing to look at. In addition, the browser can read this tag and keep your footer row at the bottom of the webpage. Furthermore, with the conjunction of a header tag, this can enable scrolling of the table body independent of the header and footer rows.</dd>
+                <dt>When to use &lt;caption&gt;?</dt>
+                <dd>&lt;caption&gt; is used to title your table and defines your table. The tag must be entered immediately following the opening table tag for it to function properly.</dd>
+                <dt>What is the difference between colspan and rowspan?</dt>
+                <dd>Both colspan and rowspan do similar actions. They both stretch a single cell across multiple cells in your table. However, they do it in differing directions. Rowspan stretches your cell downwards, across the cells below the parent cell. Colspan stretches your cell rightwards, across the cells directly to the right of the parent cell.</dd>
+                <dt>What is the difference between cell spacing and padding?</dt>
+                <dd>Cell padding is the space between the cell border and the content of the cell, so increasing the padding will make the cell seem more spacious compared to the content within. On the other hand, spell spacing is the space between each individual cell, so increasing the cell spacing will make your table far more spread apart.</dd>
+                <dt>How do you define table borders using CSS?</dt>
+                <dd>Table borders are defined in CSS by using the border-style command to tell the program what style of border you want displayed. After defining a certain border, such as solid, you can change the color, width, and much more of the certain border with other border commands.</dd>
+                <dt>How do you control border widths using CSS?</dt>
+                <dd>You control the border widths in CSS by using the border-width command which tells the website to display the border as a certain pixel size, measurement, or even simply thin, medium, or thick. The greater pixel size, the bigger the border.</dd>
+            </dl>
+        </p>
+        <table border="1">
+            <caption>My UCSD Schedule</caption>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday/Sunday</th>
+            </tr>
+            <tr>
+                <td class="time">8:00AM</td>
+                <td rowspan="3">Wake up and get ready for the day</td>
+                <td rowspan="4">Wake up and get ready for the day</td>
+                <td rowspan="3">Wake up and get ready for the day</td>
+                <td rowspan="4">Wake up and get ready for the day</td>
+                <td rowspan="3">Wake up and get ready for the day</td>
+                <td rowspan="3">Wake up and get ready for the day</td>
+            </tr>
+            <tr>
+                <td class="time">8:30AM</td>
+            </tr>
+            <tr>
+                <td class="time">9:00AM</td>
+            </tr>
+            <tr>
+                <td class="time">9:30AM</td>
+                <td>Drive to school</td>
+                <td>Drive to school</td>
+                <td>Drive to School</td>
+                <td rowspan="5">Do homework</td>
+            </tr>
+            <tr>
+                <td class="time">10:00AM</td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 100A lecture</a></td>
+                <td rowspan="5">Go to the gym<img src="images/gym_picture.jpg"></td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 100A lecture</a></td>
+                <td rowspan="5">Go to the gym<img src="images/gym_picture.jpg"></td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 100A lecture</a></td>
+            </tr>
+            <tr>
+                <td class="time">10:30AM</td>
+            </tr>
+            <tr>
+                <td class="time">11:00AM</td>
+                <td>Eat a quick snack</td>
+                <td>Eat a quick snack</td>
+                <td>Eat a quick snack</td>
+            </tr>
+            <tr>
+                <td class="time">11:30AM</td>
+                <td rowspan="5">Go to the gym<img src="images/gym_picture.jpg"></td>
+                <td rowspan="5">Go to the gym<img src="images/gym_picture.jpg"></td>
+                <td rowspan="5">Go to the gym<img src="images/gym_picture.jpg"></td>
+            </tr>
+            <tr>
+                <td class="time">12:00PM</td>
+                <td>Eat lunch</td>
+            </tr>
+            <tr>
+                <td class="time">12:30PM</td>
+                <td rowspan="2">Eat lunch and get ready for school</td>
+                <td rowspan="2">Eat lunch and get ready for school</td>
+                <td rowspan="6">Go to the gym<img src="images/gym_picture.jpg"></td>
+            </tr>
+            <tr>
+                <td class="time">1:00PM</td>
+            </tr>
+            <tr>
+                <td class="time">1:30PM</td>
+                <td>Drive to school</td>
+                <td>Drive to school</td>
+            </tr>
+            <tr>
+                <td class="time">2:00PM</td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 120A lecture</a></td>
+                <td rowspan="3"> <a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Attend Cogs 3 lecture</a></td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 120A lecture</a></td>
+                <td rowspan="3"> <a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Attend Cogs 3 lecture</a></td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 120A lecture</a></td>
+            </tr>
+            <tr>
+                <td class="time">2:30PM</td>
+            </tr>
+            <tr>
+                <td class="time">3:00PM</td>
+                <td rowspan="2">Eat lunch and do homework</td>
+                <td rowspan="3">Eat lunch and do homework</td>
+                <td>Eat lunch</td>
+            </tr>
+            <tr>
+                <td class="time">3:30PM</td>
+                <td rowspan="3"><a href="https://catalog.ucsd.edu/courses/MGT.html">Attend MGT 45 lecture</a></td>
+                <td rowspan="3"><a href="https://catalog.ucsd.edu/courses/MGT.html">Attend MGT 45 lecture</a></td>
+                <td>Drive home</td>
+                <td rowspan="6">Play video games</td>
+            </tr>
+            <tr>
+                <td class="time">4:00PM</td>
+                <td rowspan="2"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">Attend Cogs 3 discussion</a></td>
+                <td rowspan="2">Clean up apartment for the weekend</td>
+            </tr>
+            <tr>
+                <td class="time">4:30PM</td>
+                <td rowspan="3"><a href="https://aah.ucsd.edu/supplemental-instruction/index.html">Attend SI session for Econ 100A</a></td>
+            </tr>
+            <tr>
+                <td class="time">5:00PM</td>
+                <td>Drive home</td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/MGT.html">Attend MGT 45 office hours</a></td>
+                <td>Drive home</td>
+                <td rowspan="2">Drive back to parents house</td>
+            </tr>
+            <tr>
+                <td class="time">5:30PM</td>
+                <td>Do chores at home</td>
+                <td>Do chores at home</td>
+            </tr>
+            <tr>
+                <td class="time">6:00PM</td>
+                <td>Make a snack</td>
+                <td>Drive home</td>
+                <td rowspan="2">Do homework</td>
+                <td>Eat a snack</td>
+                <td>Unpack</td>
+            </tr>
+            <tr>
+                <td class="time">6:30PM</td>
+                <td rowspan="4">Do homework</td>
+                <td>Do chores at home</td>
+                <td rowspan="4">Do homework</td>
+                <td rowspan="2">Spend time with family</td>
+                <td>Eat dinner</td>
+            </tr>
+            <tr>
+                <td class="time">7:00PM</td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 100A discussion</a></td>
+                <td rowspan="2"><a href="https://catalog.ucsd.edu/courses/ECON.html">Attend Econ 120A discussion</a></td>
+                <td rowspan="6">Hang out with friends</td>
+            </tr>
+            <tr>
+                <td class="time">7:30PM</td>
+                <td rowspan="2">Play video games</td>
+            </tr>
+            <tr>
+                <td class="time">8:00PM</td>
+                <td rowspan="2">Cook dinner</td>
+                <td>Drive home</td>
+            </tr>
+            <tr>
+                <td class="time">8:30PM</td>
+                <td rowspan="2">Cook Dinner</td>
+                <td rowspan="2">Cook dinner</td>
+                <td rowspan="2">Cook Dinner</td>
+                <td>Eat dinner with family</td>
+            </tr>
+            <tr>
+                <td class="time">9:00PM</td>
+                <td>Clean up from dinner</td>
+                <td rowspan="2">Do homework</td>
+            </tr>
+            <tr>
+                <td class="time">9:30PM</td>
+                <td>Clean up from dinner</td>
+                <td rowspan="4">Do homework</td>
+                <td>Clean up from dinner</td>
+                <td rowspan="4">Do homework</td>
+            </tr>
+            <tr>
+                <td class="time">10:00PM</td>
+                <td rowspan="3">Do homework</td>
+                <td rowspan="3">Do homework</td>
+                <td rowspan="3">Play video games</td>
+                <td rowspan="3">Do homework</td>
+            </tr>
+            <tr>
+                <td class="time">10:30PM</td>
+            </tr>
+            <tr>
+                <td class="time">11:00PM</td>
+            </tr>
+            <tr>
+                <td class="time">11:30PM</td>
+                <td>Take a shower and go to bed</td>
+                <td>Take a shower and go to bed</td>
+                <td>Take a shower and go to bed</td>
+                <td>Take a shower and go to bed</td>
+                <td>Take a shower and go to bed</td>
+                <td>Take a shower and go to bed</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

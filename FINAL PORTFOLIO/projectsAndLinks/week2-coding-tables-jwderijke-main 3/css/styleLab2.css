@@ -1,0 +1,76 @@
+th {
+    font-style: initial;
+    font-family: monospace;
+    color: purple;
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+    border-width: 3px;
+    padding: 8px;
+    background: rgba(180, 180, 180, 0.3);
+}
+
+.time {
+    color: orchid;
+    background: rgba(180, 180, 180, 0.3);
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    border-style: solid;
+    border-color: orchid;
+    border-width: 1px;
+    padding: 6px;
+    font-style: oblique;
+}
+
+td, h1, h2, h3, h4, h5, h6 {
+    font-style: oblique;
+    font-family: monospace;
+    color: darkviolet;
+    background: rgba(180, 180, 180, 0.3);
+    font-size: 18px;
+    padding: 5px;
+    text-align: left;
+    border-style: solid;
+    border-color: darkviolet;
+    border-width: 2px;
+}
+
+caption {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+a:link {
+    color: indigo;
+}
+
+
+a:visited {
+    color: mediumslateblue;
+}
+
+a:hover {
+    color: fuchsia;
+    cursor: crosshair;
+}
+
+a:active {
+    color: greenyellow;
+}
+
+dl {
+    font-style: oblique;
+    font-family: monospace;
+    color: darkviolet;
+    background: rgba(180, 180, 180, 0.3);
+    font-size: 18px;
+    padding: 5px;
+    text-align: left;
+    border-style: solid;
+    border-color: darkviolet;
+    border-width: 2px;
+}
