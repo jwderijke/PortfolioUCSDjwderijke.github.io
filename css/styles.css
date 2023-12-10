@@ -50,7 +50,7 @@ p {
 
 .navbar-brand {
     font-family: 'abel';
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
 }
@@ -182,5 +182,9 @@ p {
 
     #aboutme {
         text-align: center;
+    }
+
+.photography {
+        width: 120%;
     }
 }
