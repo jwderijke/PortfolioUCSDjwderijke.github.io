@@ -168,13 +168,7 @@ p {
     margin: 20px 10px;
 }
 
-.img-carousel { min-width: 800px;}
-
-@media (max-width: 768px) { 
-    .carousel .carousel-inner .item {
-        height: 500px;
-    }
-}
+.photography { min-width: 400px;}
 
 /* Media Query Section*/
 
