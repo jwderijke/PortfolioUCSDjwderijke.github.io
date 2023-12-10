@@ -120,6 +120,7 @@ p {
 .pricing-header {
     color: #fff;
     font-size: 3.3rem;
+    text-align: center;
 }
 
 .pricing-column {
