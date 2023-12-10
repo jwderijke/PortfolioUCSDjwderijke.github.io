@@ -1,0 +1,58 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: violet;
+  font-family: fantasy;
+}
+
+h1 {
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+  font-size: 3.25rem;
+  font-weight: 500;
+  color: white;
+}
+
+h2, h3 {
+  margin: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+img {
+  width: 95%;
+  background-color: purple;
+  border-radius: 30%;
+  mix-blend-mode: hard-light;
+}
+
+.myBtn {
+  margin: 30px;
+  font-family: fantasy;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: fantasy;
+}
